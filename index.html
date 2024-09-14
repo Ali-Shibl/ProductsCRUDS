@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+  </head>
+  <body>
+
+
+    <div class="w-75 mx-auto  my-5">
+      <div class="form-floating mb-3">
+        <input oninput="validateForm(this)" type="text" class="form-control border-0 border-bottom border-2" id="productname" placeholder="productname">
+        <label for="productname">Product Name :</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input oninput="validateForm(this)"  type="number" class="form-control border-0 border-bottom border-2" id="productprice" placeholder="productprice">
+        <label for="productprice">Product Price :</label>
+      </div>
+     
+      <div class="form-floating mb-3">
+        <input oninput="validateForm(this)"  list="datalistOptions"  class="form-control border-0 border-bottom border-2" id="categories" placeholder="Productcategories">
+        <label for="categories">Product categories :</label>
+
+        <datalist id="datalistOptions" class="is">
+          
+         
+          <option value="laptoop">
+          <option value="mobile">
+          
+         
+          
+        </datalist>
+      </div>
+      
+   
+    <div class="form-floating mb-3">
+      <textarea oninput="validateForm(this)"  class="form-control border-0 border-bottom border-2" id="productdesc" placeholder="Productdesc"></textarea>
+      <label for="desc">Product desc :</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="file"  class="form-control border-0 border-bottom border-2" id="image" placeholder="Productimage">
+      <label for="image">Product image :</label>
+    </div>
+
+    <button type="submit" class="btn  btn-outline-dark" id="submit">Add Product</button>
+    <button type="submit" class="btn  btn-outline-dark d-none" id="updata">updata Product</button>
+
+ </div>
+
+
+
+
+<div class="container">
+  <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+    <p class="text-capitalize m-0 fw-bolder">search:</p>
+  <input  type="search" class="form-control  w-75" id="search">
+  </div>
+  
+
+  <div class="row g-3 py-3" id="rowData">
+   
+  </div>
+   
+</div>
+ 
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  </body>
+</html>

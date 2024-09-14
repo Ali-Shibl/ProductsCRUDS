@@ -1,0 +1,9 @@
+
+.form-control:focus {
+    box-shadow: none;
+}
+img{
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    height: 200px;
+}
